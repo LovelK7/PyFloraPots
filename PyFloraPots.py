@@ -832,7 +832,7 @@ class PyF_main_menu(ctk.CTk):
         stop_record_btn = ctk.CTkButton(meas_btns_frame, width=100, text="Stop", command=stop_recording_event)
         stop_record_btn.pack(padx=10, pady=10, side='left')
         stop_record_btn.configure(state='disabled')
-        refresh_btn = ctk.CTkButton(meas_btns_frame, width=100, text="Refresh graphs", command=refresh_tabs)
+        refresh_btn = ctk.CTkButton(meas_btns_frame, width=100, text="Reload graphs", command=refresh_tabs)
         refresh_btn.pack(padx=10, pady=10, side='left')
         meas_tabs = ctk.CTkTabview(self.meas_frame)
         meas_tabs.grid(row=2, column=0, padx=10, pady=10, columnspan=2)
