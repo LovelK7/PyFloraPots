@@ -194,12 +194,12 @@ class PyF_main_menu(ctk.CTk):
         self.meas_frm()
         self.profile_frm()
 
-    def sensor_reading_event(self): #SYNC ALL POTS
+    def sensor_reading_event(self): #Refresh all pots
         self.db.store_sync_data_all()
         self.refresh()
         self.select_frame('pots')
 
-    def manage_pot(self, id_number): #open window for manageing pot
+    def manage_pot(self, id_number): #Open window for manageing pot
         pot_root = ctk.CTkToplevel()
         pot_root.title('PyFloraApp - Manage pot')
         pot_root.geometry("950x750")
@@ -467,7 +467,7 @@ class PyF_main_menu(ctk.CTk):
                     row += 1
                     col = 0
         
-        refresh_status_frame()
+        refresh_status_frame() # Status frame refreshes each time the manage_pot is run
 
     class Pot_box(ctk.CTkFrame): #SHOW POT BOXES
         def __init__(self, master, id_number):
@@ -508,7 +508,7 @@ class PyF_main_menu(ctk.CTk):
                 self.status_label = ctk.CTkLabel(self, text=f'{status_list[i]}', font=('Roboto', 10))
                 self.status_label.pack(padx=10, pady=0, anchor='w')
 
-    def pot_frm(self):
+    def pot_frm(self): #Show all pots
         global pots_location
         def datetime_clock():
             global meteo_app
@@ -558,7 +558,7 @@ class PyF_main_menu(ctk.CTk):
             pot_box.grid(row=row, column=col, padx=10, pady=10, sticky='ew')                
             col += 1  
 
-    def manage_plant(self, id_number, foto_path): #Open window for updateing plant
+    def manage_plant(self, id_number, foto_path): #Open window for manageing plant
         plant_root = ctk.CTkToplevel()
         plant_root.title('PyFloraApp - Manage plant')
         plant_root.geometry("700x340")
@@ -677,7 +677,7 @@ class PyF_main_menu(ctk.CTk):
         plant_delete_btn.grid(row=8, column=0, columnspan=2, padx=10, pady=5)
         plant_root.mainloop()
 
-    class Plant_box(ctk.CTkFrame):
+    class Plant_box(ctk.CTkFrame): # Definition of boxes within Plants frame
         def __init__(self, master, id_number, name, foto_path):
             super().__init__(master)
             self.id_number = id_number
@@ -759,7 +759,7 @@ class PyF_main_menu(ctk.CTk):
             plant_box.grid(row=row, column=col, padx=10, pady=10, sticky='ew')
             col += 1                
 
-    def meas_frm(self):
+    def meas_frm(self): # Frame with sensor measurements
         self.meas_frame = ctk.CTkFrame(self.root, corner_radius=0, fg_color="transparent")
         self.meas_frame.grid_columnconfigure(0, weight=1)
         self.meas_frame.grid_columnconfigure(1, weight=1)
