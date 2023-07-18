@@ -1,6 +1,6 @@
 ## PyFloraPots
 
-PyFloraPots helps your potted plants to be happy and well nourished thanks to the use of IoT.
+PyFloraPots helps your potted plants to grow and be well nourished thanks to the use of IoT.
 
 # Usage
 ***PyFloraPots consists of the main program, which contains the GUI code (PyFloraPots.py) that is linked to reading, saving, generation and other modules.***
