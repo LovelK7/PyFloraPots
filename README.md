@@ -1,9 +1,11 @@
 ## PyFloraPots
 
-PyFloraPots helps your potted plants to grow and be well nourished thanks to the use of IoT.
+Never know when to water your plant?
+
+Thanks to the use of IoT and PyFloraPots app, you can now monitor the soil parameters in all of your pots and make sure your plants grow in optimal conditions.
 
 # Usage
-***PyFloraPots consists of the main program, which contains the GUI code (PyFloraPots.py) that is linked to reading, saving, generation and other modules.***
+***PyFloraPots consists of the main program, which contains the GUI code (PyFloraPots.py) that is linked to modules handling database reading, saving and updating, data acquisition, generation and other.***
 
 The GUI consists of two windows - first the Login, where the username and password are authenticated, and the second, where it is possible to use
 all program functionalities.
@@ -19,6 +21,7 @@ The navigation bar on the left contains a list of sub-windows:
 
 # POTS
 ***All pot information (location, plant name, plant picture and status) are shown in the boxes for all pots.***
+
 The toolbar in the upper part allows:
     - adding a new pot or
     - status update (SYNC).
@@ -62,6 +65,7 @@ Clicking on any picture of a plant opens a window for changing the name or photo
 
 # MEASUREMENTS
 ***The program enables continuous monitoring and recording of sensor values (generated data).*** 
+
 Data is recorded for all available containers and stored in CSV files for each pot. By default the CSV files are stored in the main directory.
 Toolbar:
     - Reset - files are emptied and generated anew
@@ -75,7 +79,8 @@ Toolbar:
 </p>
 
 # MY PROFILE
-***Here are stored all user data***
+***Here are stored all user data***.
+
 It is possible to change user data:
     - Name
     - Surname
@@ -94,7 +99,7 @@ Exit the program.
 ***The program works with the help of several modules, each with a separate function***
 
 # database.py
-This is where storage, reading, changing, updating and other activities for the baza_pot-plant.db database are performed.
+This is where storage, reading, changing, updating and other activities for the "baza_pot-plant.db" database are performed.
 The database consists of 3 tables:
     - Plants
     - PyPots
@@ -116,13 +121,13 @@ This module is used for storing and reading from files, i.e. storing and reading
 measurements from sensors.
 
 # measurements.py
-This module is used for reading from files and importing data in the form of Pandas DataFrame
+This module is used for reading data from files and importing it in the form of Pandas DataFrame.
 
 # plots.py
-This module reads data from measurements.py (pd df) and generated 4 graphs for each sensor value for a particular selected vessel.
+This module reads data from measurements.py (Pandas DataFrame) and generates 4 graphs for each sensor value of a particular selected pot.
 
 # meteo.py
-This module is a webscrape program for retrieving outdoor air temperature values from the DHMZ website.
+This module is a webscrape program for retrieving outdoor air temperature values from the official Croatian meteorological institution website.
 
 # user.py
 Using this module, it is possible to change user data.
