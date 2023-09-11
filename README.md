@@ -16,8 +16,9 @@ The navigation bar on the left contains a list of sub-windows:
     - My profile
     - Exit
 <p align="center">
-	<img src="https://github.com/LovelK7/PyFloraPots/assets/114396834/bf500ddc-faca-4c05-8040-7268d670b5f1" width="50%">
+	<img src="https://github.com/LovelK7/PyFloraPots/blob/main/screenshots/01_257043342-bf500ddc-faca-4c05-8040-7268d670b5f1.png?raw=true" width="50%">
 </p>
+
 
 # POTS
 ***All pot information (location, plant name, plant picture and status) are shown in the boxes for all pots.***
@@ -28,7 +29,7 @@ The toolbar in the upper part allows:
 The toolbar in the upper right corner contains the current date and time values and the outside air temperature at the chosen weather station.
 
 <p align="center">
-	<img src="https://github.com/LovelK7/PyFloraPots/assets/114396834/c5d5de31-8ad6-4b8f-9a0d-10c0cffb841c" width="75%">
+	<img src="https://github.com/LovelK7/PyFloraPots/blob/main/screenshots/02_257042939-c5d5de31-8ad6-4b8f-9a0d-10c0cffb841c.png?raw=true" width="75%">
 </p>
 
 Clicking on any pot (image) opens a separate window for viewing the status and changing the pots's data.
@@ -45,7 +46,7 @@ The right part shows the status of the plant (data and text) and continuous meas
 The Sync button refreshes the display of the value and status of the plant in the pot.
 
 <p align="center">
-	<img src="https://github.com/LovelK7/PyFloraPots/assets/114396834/12789575-1faf-4123-b198-9e26126d380d" width="75%">
+	<img src="https://github.com/LovelK7/PyFloraPots/blob/main/screenshots/03_257043109-12789575-1faf-4123-b198-9e26126d380d.png?raw=true" width="75%">
 </p>
 
 # PLANTS
@@ -57,10 +58,10 @@ Clicking on any picture of a plant opens a window for changing the name or photo
 - All plant photos are stored in "foto" directory
 
 <p align="center">
-	<img src="https://github.com/LovelK7/PyFloraPots/assets/114396834/005de48c-3039-4e9f-8425-b4ce5f7de87c" width="75%">
+	<img src="https://github.com/LovelK7/PyFloraPots/blob/main/screenshots/04_257043142-005de48c-3039-4e9f-8425-b4ce5f7de87c.png?raw=true" width="75%">
 </p>
 <p align="center">
-	<img src="https://github.com/LovelK7/PyFloraPots/assets/114396834/6d61e865-5e71-42e3-83d4-53a71b12cbce" width="50%">
+	<img src="https://github.com/LovelK7/PyFloraPots/blob/main/screenshots/05_257043183-6d61e865-5e71-42e3-83d4-53a71b12cbce.png?raw=true" width="50%">
 </p>
 
 # MEASUREMENTS
@@ -75,7 +76,7 @@ Toolbar:
     - Reload the graphs - the display is refreshed and the values from the files are read again
 	
 <p align="center">
-	<img src="https://github.com/LovelK7/PyFloraPots/assets/114396834/e2bbf629-5e2a-4ac8-b7f1-96df34ede9f5" width="75%">
+	<img src="https://github.com/LovelK7/PyFloraPots/blob/main/screenshots/06_257043234-e2bbf629-5e2a-4ac8-b7f1-96df34ede9f5.png?raw=true" width="75%">
 </p>
 
 # MY PROFILE
@@ -89,7 +90,7 @@ It is possible to change user data:
     - Weather station
 	
 <p align="center">
-	<img src="https://github.com/LovelK7/PyFloraPots/assets/114396834/985c14c0-8a39-402e-8f63-7eed51c24ac6" width="40%">
+	<img src="https://github.com/LovelK7/PyFloraPots/blob/main/screenshots/07_257043281-985c14c0-8a39-402e-8f63-7eed51c24ac6.png?raw=true" width="40%">
 </p>
 
 # EXIT
